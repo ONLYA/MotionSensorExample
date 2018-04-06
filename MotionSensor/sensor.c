@@ -13,6 +13,7 @@
 
 #define wrap_180(x) (x < -180 ? x+360 : (x > 180 ? x - 360: x))
 #define delay_ms(a)    usleep(a*1000)
+#define get_temp(*data) mpu_get_temperature(*data)
 
 // MPU control/status vars
 uint8_t devStatus;      // return status after each device operation
