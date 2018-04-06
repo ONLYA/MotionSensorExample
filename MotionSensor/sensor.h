@@ -5,7 +5,7 @@ int ms_open();
 int ms_update();
 int ms_close();
 
-#define get_temp mpu_get_temperature
+#define get_temp(*data) mpu_get_temperature(*data)
 
 uint8_t GetGravity(VectorFloat *v, Quaternion *q);
 uint8_t GetYawPitchRoll(float *data, Quaternion *q, VectorFloat *gravity); 
